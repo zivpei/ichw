@@ -13,7 +13,7 @@
 
 通常我们说的cache line 64位、32位，实际上说的是cache line中cache block是64位或32位。
 
-![cache's structure](/Users/liupeipei/Desktop/ichw/062318599121326.png 
+![cache's structure](https://github.com/zivpei/ichw/blob/master/062318599121326.png
 )
 
 假设我们的存储器地址空间的长度为m位，即共有M=2<sup>m</sup>个不同的地址。每个cache line的大小为2<sup>b</sup>字节，故内存中的cache line个数为2<sup>m-b</sup>。将这些cache lines分配到2<sup>s</sup>个sets里，则每个set平均得到2<sup>m-b-s</sup>个cache lines，可想而知应该有2<sup>m-b-s</sup>个tags来标记它们，于是tag的长度t=m-b-s。
