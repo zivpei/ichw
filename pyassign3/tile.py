@@ -1,3 +1,10 @@
+"""
+tile.py
+_name_: Liu Xingpei
+_pkuid_: 1800011711
+_email_: zivpei@pku.edu.cn
+"""
+
 import time
 import turtle
 
